@@ -42,4 +42,4 @@ Füge hier Screenshots des Spiels ein, um die Benutzeroberfläche zu zeigen.
 
 ### Deployment
 
-Diese Webseite wird mit GitHub Pages gehostet. Besuche [Pong]() für die Live-Version.
+Diese Webseite wird mit GitHub Pages gehostet. Besuche [Pong](https://ivan-555.github.io/Pong/) für die Live-Version.
