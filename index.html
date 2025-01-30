@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="play-mode">
+        <button class="single-player-button active">Single Player</button>
+        <button class="multi-player-button">Multi Player</button>
+    </div>
+    <div class="difficulty usable">
+        <button class="easy-button">Easy</button>
+        <button class="medium-button active">Medium</button>
+        <button class="hard-button">Hard</button>
+    </div>
+    <div class="score">Score:<span class="p1-score">0</span><span>|</span><span class="p2-score">0</span></div>
+    <canvas id="canvas"></canvas>
+    <span class="pause-text">Press Space to Pause</span>
+    <div class="start-message">
+        <span class="start-message-text">Press Space to Start</span>
+    </div>
+    <div class="winner-message">
+        <span class="winner-message-text"></span>
+        <button class="restart-button">Restart</button>
+    </div>
+    <div class="pause-message">
+        <span class="pause-message-text">Game Paused</span>
+        <button class="resume-button">Resume</button>
+    </div>
+</body>
+</html>

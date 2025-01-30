@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow: hidden;
+}
+
+body{
+   height: 100svh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   background: rgb(53, 62, 75);
+}
+
+.play-mode button{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.play-mode button:hover{
+    background: skyblue;
+}
+.play-mode button.active{
+    transform: scale(0.95);
+    background: skyblue;
+}
+
+.difficulty{
+    opacity: 0.2;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.difficulty.usable{
+    opacity: 1;
+    pointer-events: all;
+}
+.difficulty button{
+    padding: 7px 15px;
+    font-size: 1rem;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.difficulty button:hover{
+    background: skyblue;
+}
+.difficulty button.active{
+    transform: scale(0.95);
+    background: skyblue;
+}
+
+.score{
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.score span{
+    color: skyblue;
+    margin-left: 15px;
+}
+
+.score span:nth-child(1){
+   margin-left: 30px;
+}
+
+.score span:nth-child(2){
+    color: rgb(255, 255, 255);
+}
+
+#canvas{
+    background: rgb(18, 18, 18);
+    border-top: 5px solid skyblue;
+    border-bottom: 5px solid skyblue;
+    display: block;
+}
+
+.pause-text{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.start-message{
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.142);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+}
+
+.winner-message{
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.142);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.winner-message button{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background: skyblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pause-message{
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.142);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.pause-message button{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background: skyblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-height: 930px){
+    .play-mode button{
+        font-size: 1.2rem;
+    }
+    .difficulty button{
+        font-size: 0.9rem;
+    }
+    .score{
+        font-size: 2.5rem;
+    }
+    .pause-text{
+        font-size: 1.2rem;
+    }
+    .start-message{
+        font-size: 2.5rem;
+    }
+    .winner-message{
+        font-size: 2.5rem;
+    }
+    .winner-message button{
+        font-size: 1.2rem;
+    }
+    .pause-message{
+        font-size: 2.5rem;
+    }
+    .pause-message button{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-height: 770px){
+    .play-mode button{
+        font-size: 1.1rem;
+    }
+    .difficulty button{
+        font-size: 0.8rem;
+    }
+    .score{
+        font-size: 2.3rem;
+    }
+    .pause-text{
+        font-size: 1.1rem;
+    }
+    .start-message{
+        font-size: 2.3rem;
+    }
+    .winner-message{
+        font-size: 2.3rem;
+    }
+    .winner-message button{
+        font-size: 1.1rem;
+    }
+    .pause-message{
+        font-size: 2.3rem;
+    }
+    .pause-message button{
+        font-size: 1.1rem;
+    }
+}
