@@ -2,16 +2,17 @@
 
 ### Projektbeschreibung
 
-Dieses Pong-Spiel ist eine moderne Umsetzung des klassischen Arcade-Spiels. Es bietet sowohl einen Einzelspieler- als auch einen Mehrspielermodus mit unterschiedlichen Schwierigkeitsgraden.
-Das Ziel des Spiels ist es, den Ball am Gegner vorbeizuspielen und Punkte zu erzielen. Die KI im Einzelspielermodus ist anpassbar, sodass das Spiel sowohl für Anfänger als auch für erfahrene Spieler eine Herausforderung darstellt.
+Dieses Pong-Spiel ist eine moderne Umsetzung des klassischen Arcade-Games. Es bietet sowohl einen Einzelspielermodus gegen eine KI als auch einen lokalen Mehrspielermodus.
+Im Einzelspielermodus kann man zwischen drei Schwierigkeitsstufen wählen, welche die Fehlerquote der KI beeinflussen.
+Ziel des Spiels ist es, den Ball am Gegner vorbeizuspielen und als Erster fünf Punkte zu erreichen.
 
 ### Features
 
 - Einzelspieler- und Mehrspielermodus: Spiele gegen eine KI oder einen zweiten Spieler.
 - Drei Schwierigkeitsstufen: Wähle zwischen "Einfach", "Mittel" und "Schwer".
 - Dynamische KI: Die KI reagiert unterschiedlich je nach Schwierigkeitsgrad.
-- Responsives Design: Das Spiel passt sich der Bildschirmgröße an.
 - Flüssige Animationen: Durch requestAnimationFrame läuft das Spiel mit hohen FPS.
+- Konstante Geschwindigkeit: Die Spielgeschwindigkeit bleibt unabhängig von der Framerate auf allen Geräten konstant.
 - Pause-Funktion: Das Spiel kann mit der Leertaste pausiert und fortgesetzt werden.
 - Gewinnbedingung: Wer zuerst 5 Punkte erreicht, gewinnt das Spiel.
 - Reset-Funktion: Nach Spielende kann eine neue Runde gestartet werden.
@@ -32,13 +33,10 @@ Das Ziel des Spiels ist es, den Ball am Gegner vorbeizuspielen und Punkte zu erz
 
 ### Technologien
 
-- HTML5: Struktur und Layout des Spiels
-- CSS3: Styling und Animationen
-- JavaScript (ES6): Spielmechanik und Interaktivität
-
-### Screenshots
-
-Füge hier Screenshots des Spiels ein, um die Benutzeroberfläche zu zeigen.
+- HTML
+- CSS
+- JavaScript
+- Git
 
 ### Deployment
 
